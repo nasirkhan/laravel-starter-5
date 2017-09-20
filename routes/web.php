@@ -11,10 +11,6 @@
 |
 */
 
-
-
-
-
 /*
 *
 * Frontend Routes
@@ -22,13 +18,10 @@
 * --------------------------------------------------------------------
 */
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
-
     Auth::routes();
 
     includeRouteFiles(__DIR__.'/frontend/');
-
 });
-
 
 /*
 *

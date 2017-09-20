@@ -6,7 +6,6 @@
 * --------------------------------------------------------------------
 */
 
-
 Route::get('/', 'BackendController@index')->name('home');
 
 Route::resource('users', 'UserController');

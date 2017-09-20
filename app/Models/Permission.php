@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 class Permission extends \Spatie\Permission\Models\Permission
 {
     /**
-     * Default Permissions of the Application
+     * Default Permissions of the Application.
      */
     public static function defaultPermissions()
     {
