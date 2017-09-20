@@ -2,20 +2,20 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\View;
 use App\Http\Composers\GlobalComposer;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 /**
-* Class ComposerServiceProvider.
-*/
+ * Class ComposerServiceProvider.
+ */
 class ComposerServiceProvider extends ServiceProvider
 {
     /**
-    * Register bindings in the container.
-    *
-    * @return void
-    */
+     * Register bindings in the container.
+     *
+     * @return void
+     */
     public function boot()
     {
         /*
@@ -36,14 +36,13 @@ class ComposerServiceProvider extends ServiceProvider
         * Backend
         * -----------------------------------
         */
-
     }
 
     /**
-    * Register the service provider.
-    *
-    * @return void
-    */
+     * Register the service provider.
+     *
+     * @return void
+     */
     public function register()
     {
         //

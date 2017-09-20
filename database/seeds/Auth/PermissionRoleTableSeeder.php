@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use App\Models\Role;
 use App\Models\Permission;
+use App\Models\Role;
+use Illuminate\Database\Seeder;
 
 /**
  * Class PermissionRoleTableSeeder.
@@ -25,7 +25,6 @@ class PermissionRoleTableSeeder extends Seeder
         $executive = Role::create(['name' => 'executive']);
         $user = Role::create(['name' => 'user']);
 
-
         // Create Permissions
         Permission::firstOrCreate(['name' => 'view_backend']);
 
@@ -35,11 +34,9 @@ class PermissionRoleTableSeeder extends Seeder
             Permission::firstOrCreate(['name' => $perms]);
         }
 
-
         // Assign Permissions to Roles
         $admin->givePermissionTo(Permission::all());
         $executive->givePermissionTo('view_backend');
-
 
         $this->enableForeignKeys();
     }
