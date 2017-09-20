@@ -12,6 +12,7 @@
         @stack('before-styles')
 
         {{ Html::style('css/bootstrap.min.css') }}
+        {{ Html::style('css/font-awesome.min.css') }}
         {{ Html::style('css/custom.css') }}
 
         @stack('after-styles')
