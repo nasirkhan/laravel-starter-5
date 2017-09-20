@@ -29,11 +29,11 @@
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuUser" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">{{ $logged_in_user->name }}</a>
 
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUser">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuUser">
                         @can('view backend')
                             {{ link_to_route('admin.dashboard', __('navs.frontend.user.administration'), [], ['class' => 'dropdown-item']) }}
                         @endcan
-                        
+
                         {{ link_to_route('frontend.auth.logout', __('navs.general.logout'), [], ['class' => 'dropdown-item']) }}
                     </div>
                 </li>
